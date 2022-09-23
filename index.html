@@ -12,6 +12,11 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
      <script>
       console.log("Saoko Papi Saoko");
+
+      function colorTitulo(){
+        console.log("Pulso el botón de generation");
+        document.getElementById("generation").style.color = "blue";
+      }
      </script>
 </head>
 <body>
@@ -59,14 +64,14 @@
       <!-- Descripción Generation -->
       <div class="row">
           <div>
-              <h1>Vestuarios para los viernes temáticos</h1>
+              <h1>Vestuarios los <span id="generation">viernes temáticos</span></h1>
               <p>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
                   voluptas cumque unde reiciendis adipisci numquam ad qui minima
                   explicabo eius eveniet officia neque, molestias culpa impedit. Porro
                   explicabo molestiae expedita.
               </p>
-              <p>
+              <p onclick="colorTitulo()">
                   <a href="https://mexico.generation.org/" target="_blank" class="btn btn-success">Visita
                       Generation</a>
               </p>
